@@ -1,7 +1,4 @@
-import 'package:dashboard_ui/app_bars.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'shape.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,33 +8,21 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    // var size = MediaQuery.of(context).size;
+
     return Scaffold(
-        appBar: appBar,
-        body: Stack(
-          children: [
-            Shape(),
-            ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage('assets/pp.jpg'),
+      body: Stack(
+        children: [
+          Container(
+            height: 500,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/bg.png'),
               ),
-              title: Text(
-                'Sandesh',
-                style: GoogleFonts.lato(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              subtitle: Text(
-                '02-556472',
-                style: GoogleFonts.lato(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white60,
-                ),
-              ),
-            )
-          ],
-        ));
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
