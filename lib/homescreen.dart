@@ -16,36 +16,27 @@ class _HomeScreenState extends State<HomeScreen> {
         body: Stack(
           children: [
             Shape(),
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/pp.jpg'),
-                    ),
-                    borderRadius: BorderRadius.circular(50),
-                  ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage('assets/pp.jpg'),
+              ),
+              title: Text(
+                'Sandesh',
+                style: GoogleFonts.lato(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
-                Column(
-                  children: [
-                    Text(
-                      'Sandesh Rimal',
-                      style: GoogleFonts.lato(
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                    ),
-                    Text(
-                      '02-567334',
-                      style: GoogleFonts.lato(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white60),
-                    ),
-                  ],
+              ),
+              subtitle: Text(
+                '02-556472',
+                style: GoogleFonts.lato(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white60,
                 ),
-              ],
-            ),
+              ),
+            )
           ],
         ));
   }
