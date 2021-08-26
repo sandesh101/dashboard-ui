@@ -1,3 +1,4 @@
+import 'package:dashboard_ui/app_bars.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,7 +30,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Container(
                     height: 65,
-                    margin: EdgeInsets.only(bottom: 30),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 20.0, top: 5.0),
                       child: Row(
@@ -70,75 +70,109 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          SizedBox(height: 30),
           GridView.count(
-            mainAxisSpacing: 10,
+            mainAxisSpacing: 20,
             crossAxisSpacing: 10,
             crossAxisCount: 2,
             primary: false,
             children: [
               Card(
-                color: Colors.yellow,
+                margin: EdgeInsets.only(top: 100, left: 10),
+                color: Colors.blue[300],
                 child: InkWell(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.portrait_rounded, size: 100),
+                      Icon(
+                        Icons.portrait_rounded,
+                        size: 100,
+                        color: Colors.teal,
+                      ),
                       Text('Profile')
                     ],
                   ),
                 ),
               ),
               Card(
+                margin: EdgeInsets.only(top: 100, left: 10),
+                color: Colors.blue[300],
                 child: InkWell(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.portrait_rounded, size: 100),
+                      Icon(
+                        Icons.today,
+                        size: 100,
+                        color: Colors.teal,
+                      ),
+                      Text('Attendance')
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.only(top: 100, left: 10),
+                color: Colors.blue[300],
+                child: InkWell(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.work,
+                        size: 100,
+                        color: Colors.teal,
+                      ),
+                      Text('Work')
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.only(top: 100, left: 10),
+                color: Colors.blue[300],
+                child: InkWell(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.schedule,
+                        size: 100,
+                        color: Colors.teal,
+                      ),
+                      Text('Time Table')
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.only(top: 100, left: 10),
+                color: Colors.blue[300],
+                child: InkWell(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.portrait_rounded,
+                        size: 100,
+                        color: Colors.teal,
+                      ),
                       Text('Profile')
                     ],
                   ),
                 ),
               ),
               Card(
+                margin: EdgeInsets.only(top: 100, left: 10),
+                color: Colors.blue[300],
                 child: InkWell(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.portrait_rounded, size: 100),
-                      Text('Profile')
-                    ],
-                  ),
-                ),
-              ),
-              Card(
-                child: InkWell(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.portrait_rounded, size: 100),
-                      Text('Profile')
-                    ],
-                  ),
-                ),
-              ),
-              Card(
-                child: InkWell(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.portrait_rounded, size: 100),
-                      Text('Profile')
-                    ],
-                  ),
-                ),
-              ),
-              Card(
-                child: InkWell(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.portrait_rounded, size: 100),
+                      Icon(
+                        Icons.portrait_rounded,
+                        size: 100,
+                        color: Colors.teal,
+                      ),
                       Text('Profile')
                     ],
                   ),
